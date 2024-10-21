@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void LateUpdate() {
+    void Update() {
         float x = Mathf.Clamp(follow.position.x + camOffset.x, limitX.x, limitX.y);
         float y = Mathf.Clamp(follow.position.y + camOffset.y, limitY.x, limitY.y);
         float z = follow.position.z + camOffset.z;
