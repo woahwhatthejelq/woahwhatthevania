@@ -49,23 +49,24 @@ public class Player : MonoBehaviour {
 
             jumping = Input.GetButton("Jump");
 
-            if (Input.GetButtonDown("Fire1")) {
+            if (Input.GetButtonDown("Fire1") && rb.velocity.y == 0) {
                 animator.SetTrigger("Attack");
                 isAttacking = true;
-                Invoke("Continue", animator.playbackTime);
+                Invoke("Continue", 0.4f);
             }
         } else {
-            horizontal = 0f;
             jumping = false;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        
+        if (collision.tag == "Enemy") {
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(1f);
+        }
     }
 
     private void Continue() {
-        animationManager.FinishAttack();
+        isAttacking = false;
     }
 
     private void FixedUpdate() {
@@ -80,5 +81,9 @@ public class Player : MonoBehaviour {
         } else if (rb.velocity.y == 0) {
             animator.SetBool("Jump", false);
         }
+        if (isAttacking) {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+        animator.SetFloat("YVelocity", rb.velocity.y);
     }
 }
