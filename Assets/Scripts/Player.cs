@@ -17,6 +17,8 @@ public class Player : MonoBehaviour {
     public bool isAttacking = false;
     private AnimationManager animationManager;
 
+    public bool grounded = false;
+
     // Start is called before the first frame update
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -49,7 +51,7 @@ public class Player : MonoBehaviour {
 
             jumping = Input.GetButton("Jump");
 
-            if (Input.GetButtonDown("Fire1") && rb.velocity.y == 0) {
+            if (Input.GetButtonDown("Fire1") && grounded) {
                 animator.SetTrigger("Attack");
                 isAttacking = true;
                 Invoke("Continue", 0.4f);
@@ -73,12 +75,12 @@ public class Player : MonoBehaviour {
         if (!isAttacking) {
             rb.velocity = new Vector2(speed * horizontal, rb.velocity.y);
 
-            if (jumping && rb.velocity.y == 0) {
+            if (jumping && grounded) {
                 rb.AddForce(Vector2.up * jumpForce);
                 animator.SetBool("Jump", true);
             }
 
-        } else if (rb.velocity.y == 0) {
+        } else if (grounded) {
             animator.SetBool("Jump", false);
         }
         if (isAttacking) {
