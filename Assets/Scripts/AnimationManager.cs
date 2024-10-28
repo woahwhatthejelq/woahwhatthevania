@@ -12,5 +12,16 @@ public class AnimationManager : MonoBehaviour {
 
     public void FinishAttack() {
         player.isAttacking = false;
+        Debug.Log("Finish Attack");
+    }
+
+    public void BroIsntHitAnymore() {
+        player.isHit = false;
+        player.isAttacking = false;
+        Debug.Log("Bro Isnt Hit Anymore");
+    }
+
+    public void BroDied() {
+        Time.timeScale = 0;
     }
 }

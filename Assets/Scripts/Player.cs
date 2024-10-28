@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -19,6 +20,12 @@ public class Player : MonoBehaviour {
 
     public bool grounded = false;
 
+    [SerializeField]
+    private int health;
+    private int _health;
+
+    public bool isHit = false;
+
     // Start is called before the first frame update
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -26,6 +33,8 @@ public class Player : MonoBehaviour {
         animator = GetComponentInChildren<Animator>();
 
         animationManager = GetComponentInChildren<AnimationManager>();
+
+        _health = health;
     }
 
     // Update is called once per frame
@@ -54,7 +63,6 @@ public class Player : MonoBehaviour {
             if (Input.GetButtonDown("Fire1") && grounded) {
                 animator.SetTrigger("Attack");
                 isAttacking = true;
-                Invoke("Continue", 0.4f);
             }
         } else {
             jumping = false;
@@ -62,13 +70,9 @@ public class Player : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.tag == "Enemy") {
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(1f);
+        if (collision.tag == "EnemyAttack") {
+            TakeDamage(1);
         }
-    }
-
-    private void Continue() {
-        isAttacking = false;
     }
 
     private void FixedUpdate() {
@@ -87,5 +91,25 @@ public class Player : MonoBehaviour {
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
         animator.SetFloat("YVelocity", rb.velocity.y);
+    }
+
+    public void TakeDamage(int dmg) {
+        if (!isHit) {
+            Debug.Log("bro took " + dmg + " damage. :skull: Those who know:");
+
+            _health -= dmg;
+            rb.AddRelativeForce(Vector2.right);
+            isHit = true;
+            animator.SetTrigger("Hurt");
+
+            if (_health < 1) {
+                Death();
+            }
+        }
+    }
+
+    private void Death() {
+        Debug.Log("Compiler Error.");
+        animator.SetTrigger("Die");
     }
 }

@@ -20,14 +20,19 @@ public class Enemy : MonoBehaviour {
 
     private Rigidbody2D rb;
     private Transform player;
+    private Animator animator;
 
     private bool playerDetected = false;
+
+    private bool isAttacking = false;
 
 
     void Start() {
         player = GameObject.Find("Player").GetComponent<Transform>();
 
         rb = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
 
         _health = health;
     }
@@ -41,11 +46,13 @@ public class Enemy : MonoBehaviour {
 
         if (moduleDistance < detectRadius) {
             playerDetected = true;
+            animator.SetBool("Walking", true);
         } else {
             playerDetected = false;
             rb.velocity = new Vector2(0, rb.velocity.y);
+            animator.SetBool("Walking", false);
         }
-        if (playerDetected && !isHit) {
+        if (playerDetected && !isHit && !isAttacking) {
             if (vectorDistance.x > 0) {
                 transform.eulerAngles = new Vector3(0, 180, 0);
             } else {
@@ -56,6 +63,7 @@ public class Enemy : MonoBehaviour {
                 rb.velocity = new Vector2(speed * direction.x, rb.velocity.y);
             } else {
                 rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetBool("Walking", false);
                 Attack();
             }
         }
@@ -63,6 +71,12 @@ public class Enemy : MonoBehaviour {
 
     private void Attack() {
         //Bro attacked.
+        animator.SetTrigger("Attack");
+        isAttacking = true;
+    }
+
+    public void StopAttacking() {
+        isAttacking = false;
     }
 
     public void TakeDamage(float dmg) {
@@ -73,9 +87,10 @@ public class Enemy : MonoBehaviour {
             rb.AddRelativeForce(Vector2.right);
             isHit = true;
             Invoke("NoHit", 0.3f);
+            animator.SetTrigger("Hit");
 
             if (_health < 1) {
-                Death();
+                animator.SetTrigger("Die");
             }
         }
     }
@@ -86,5 +101,11 @@ public class Enemy : MonoBehaviour {
 
     public void Death() {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.tag == "PlayerAttack") {
+            TakeDamage(1f);
+        }
     }
 }
