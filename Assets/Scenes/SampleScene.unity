@@ -702,6 +702,10 @@ MonoBehaviour:
   isAttacking: 0
   grounded: 0
   health: 5
+  fireball: {fileID: 0}
+  spawnPointFireball: {fileID: 0}
+  firerate: 0
+  manaCost: 0
   isHit: 0
 --- !u!70 &593597440
 CapsuleCollider2D:

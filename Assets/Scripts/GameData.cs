@@ -10,6 +10,10 @@ public class GameData {
     [SerializeField]
     private float maxLife;
     [SerializeField]
+    private float mana;
+    [SerializeField]
+    private float maxMana;
+    [SerializeField]
     private int currentScene;
     [SerializeField]
     private Vector3 playerPos;
@@ -37,5 +41,15 @@ public class GameData {
     public int Slot {
         get { return slot; }
         set { slot = value; }
+    }
+
+    public float Mana {
+        get { return mana; }
+        set { mana = value; }
+    }
+
+    public float MaxMana {
+        get { return maxMana; }
+        set { maxMana = value; }
     }
 }

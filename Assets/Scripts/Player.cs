@@ -26,6 +26,19 @@ public class Player : MonoBehaviour {
     private int health;
     private int _health;
 
+    [SerializeField]
+    private GameObject fireball;
+
+    [SerializeField]
+    private Transform spawnPointFireball;
+
+    [SerializeField]
+    private float firerate;
+    private float fireballTimePass;
+
+    [SerializeField]
+    private float manaCost;
+
     public bool isHit = false;
 
     // Start is called before the first frame update
@@ -65,6 +78,10 @@ public class Player : MonoBehaviour {
             if (Input.GetButtonDown("Fire1") && grounded) {
                 animator.SetTrigger("Attack");
                 isAttacking = true;
+            }
+
+            if (Input.GetButtonDown("Fire2") && grounded) {
+                ShootFireball();
             }
         } else {
             jumping = false;
@@ -135,5 +152,14 @@ public class Player : MonoBehaviour {
     private void Death() {
         Debug.Log("Compiler Error.");
         animator.SetTrigger("Die");
+    }
+
+    private void ShootFireball() {
+        if (firerate <= fireballTimePass) {
+            GameManager.instance.gameData.Mana -= manaCost;
+            GameObject fireballClone = Instantiate(fireball, spawnPointFireball.position, spawnPointFireball.rotation);
+            fireballTimePass = 0;
+            fireballClone.GetComponent<Rigidbody2D>().velocity = spawnPointFireball.right * speed;
+        }
     }
 }
