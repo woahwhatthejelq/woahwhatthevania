@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.UI;
 using UnityEngine;
 
-public class SaveStibe : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class SaveStibe : MonoBehaviour {
+
+    private GameObject notActive;
+    private GameObject active;
+    private TextMeshProUGUI interaction;
+
+    void Start() {
+        notActive = transform.GetChild(0).gameObject;
+        active = transform.GetChild(1).gameObject;
+        interaction = GameObject.Find("Interaction text").GetComponent<TextMeshProUGUI>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
         
-    }
 }
