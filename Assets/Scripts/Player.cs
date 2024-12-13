@@ -10,6 +10,9 @@ public class Player : MonoBehaviour {
     private Animator animator;
 
     [SerializeField]
+    private FloorCollider floorCollider;
+
+    [SerializeField]
     private float jumpForce;
     [SerializeField]
     private float speed;
@@ -54,6 +57,7 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        grounded = floorCollider.grounded;
         horizontal = 0f;
         if (!isAttacking) {
             if (Input.GetKey(KeyCode.D)) {
@@ -75,6 +79,15 @@ public class Player : MonoBehaviour {
 
             jumping = Input.GetButton("Jump");
 
+            if (Input.GetButtonDown("Jump") && grounded) {
+                floorCollider.grounded = false;
+                grounded = false;
+                jumping = false;
+                rb.AddForce(Vector2.up * jumpForce);
+                animator.SetBool("Jump", true);
+            }
+
+
             if (Input.GetButtonDown("Fire1") && grounded) {
                 animator.SetTrigger("Attack");
                 isAttacking = true;
@@ -94,35 +107,21 @@ public class Player : MonoBehaviour {
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Floor") {
-            if (collision.GetContact(collision.contactCount-1).normal.y >= 0.5f) {
-                grounded = true;
-                animator.SetBool("inWall", false);
-                Debug.Log("Yo 2");
-            } else if (collision.GetContact(0).normal.y == 0) {
-                animator.SetBool("inWall", true);
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-                Debug.Log("Yo");
-            }
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Floor") {
-            grounded = false;
-        }
-    }
-
     private void FixedUpdate() {
         if (!isAttacking) {
-            rb.velocity = new Vector2(speed * horizontal, rb.velocity.y);
+            float groundedModifier = 1;
+            if (!grounded) {
+                groundedModifier = 0.7f;
+            }
+            rb.velocity = new Vector2(speed * horizontal * groundedModifier, rb.velocity.y);
 
-            if (jumping && grounded) {
+            /*if (jumping && grounded) {
+                floorCollider.grounded = false;
                 grounded = false;
+                jumping = false;
                 rb.AddForce(Vector2.up * jumpForce);
                 animator.SetBool("Jump", true);
-            }
+            }*/
 
         } else if (grounded) {
             animator.SetBool("Jump", false);
