@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,1330 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 448
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16838715e3a433b4282b33cbb49db212
+      internalID: -33826438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 448
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaa975373de3ba47a245279c5b64e87
+      internalID: -1751589723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 448
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25317df0dfd26e4cbe3c33fcab0da74
+      internalID: 1888447468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 448
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0400afaffa75a21458ef56d9aed2a60b
+      internalID: -1495191804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_4
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 448
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee700dddb418b748a7984c004f5cea3
+      internalID: -1533287789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 448
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5781fc2502c5e84daf9d85558977d83
+      internalID: 2008262134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_6
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 448
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1577b431a5d96f348bb4fd4fabf0c1d8
+      internalID: 1382999037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 384
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280c73729a95ade42a0f60f6c86a323d
+      internalID: -1976345283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 384
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0a5ef77d8c1c2488ef2d7f03cc55c7
+      internalID: 686340346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 384
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b2b6476ad1cf04db519a88235345bc
+      internalID: 1252355483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_10
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 384
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81720518f97b55843a4b298f5c4e23fd
+      internalID: -1831556675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_11
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 384
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364612875140ab947bb68efc4511b58b
+      internalID: 865096685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_12
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 384
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649a9c6aa9de5fd48b53b27514fab4b9
+      internalID: -720939315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_13
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 384
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60efd422e3cbff84ba42f950fce8cc89
+      internalID: -1588009200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_14
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 288
+        width: 37
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c692dcdc33a774ea87f0fd44519ad3
+      internalID: 1593123298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 288
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76edb51f9d7d0e4ebfe173040c64ec0
+      internalID: -626627569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_16
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 288
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8465c199e7ff65e4ebbf9f4d6c45621d
+      internalID: -1156465114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_17
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 276
+        width: 30
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e06983229cf4f648b73864e1ea51798
+      internalID: -1502195282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_18
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 276
+        width: 24
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e454c9d198a9f5a4e8fc3b06670583fa
+      internalID: 2147329455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_19
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 284
+        width: 18
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1539726e8abd8940921e4ee2637fa17
+      internalID: 994089527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_20
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 288
+        width: 11
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a1c6fd7ce44944786da1d43b93fe6b
+      internalID: 1598465994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_21
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 288
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eeb545b66b672a4385a3e427a497d04
+      internalID: 1005888213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_22
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 288
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b6c1d919b1b214cae16072814aff3b
+      internalID: -14999092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_23
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 288
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96cee4b47b6a8f4faccad30594c0131
+      internalID: -254311077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_24
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 288
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c939af4229d0b42b38c860a6f7983b
+      internalID: 1871239964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_25
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 288
+        width: 25
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3aba10d55cfae4e8ca323ac0c01214
+      internalID: 731635279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_26
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 288
+        width: 16
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb5224f9f8557041804e7857925c1ca
+      internalID: -987087736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_27
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 288
+        width: 8
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c53c1d5b7c0f2642854a2967676f861
+      internalID: -1813900458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_28
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 192
+        width: 37
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19a9882a32cbc040ba1596c377ba500
+      internalID: 474638104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_29
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 192
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87631f818092d6640b7d0c39b73c4e0b
+      internalID: 1567182235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_30
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 192
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe54d1fec2541f40ae4df33b0d722ec
+      internalID: -1896659913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_31
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 192
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27ba3e3f66832a4d8732d0c58dbdd6d
+      internalID: -1000051891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_32
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 192
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044a2f61506f818448fe241f94479ef9
+      internalID: -227521272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_33
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 192
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ac71262f1746e45b7d3fcde0d95459
+      internalID: 1135937979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_34
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 192
+        width: 11
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8742ff850f2eef4b8472fd2ed7fe020
+      internalID: -1489025121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_35
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 192
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de427bd164917d41aea0d68e44e0fc6
+      internalID: 644579411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_36
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 192
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afac126550142174e98d797c719c223d
+      internalID: 354150342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_37
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 192
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21756ffc002359c4ba2d339bfc24bb48
+      internalID: -1685463046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_38
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 192
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85fa9cb86184ce4291445106dc57e06
+      internalID: -1042396923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_39
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 192
+        width: 25
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193dc4d7a46add24a955f94d848abcb7
+      internalID: -1820183499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_40
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 192
+        width: 15
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50cefc5876ea2546b2793837e3aa0a9
+      internalID: 66520014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_41
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 192
+        width: 6
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ababed4279234e499f7a66233fa667b
+      internalID: -1696351560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_42
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 128
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346be2eaa20af7e41acd97855fccd2b8
+      internalID: -879565475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_43
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 128
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98900eb4f637ac54aab6fb7652b2c52c
+      internalID: 2132416189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_44
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 128
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a6b3ab8ee2a6d46821f13ecdda9de1
+      internalID: 875922792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_45
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 128
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e705628e61657e944b12530eb165e5cd
+      internalID: -1664786641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_46
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 128
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abc5489b6454b44ea0cae51b2c1023e
+      internalID: 481686989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_47
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 128
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11dd4f92a0e082449912303f6d2f8661
+      internalID: -413023204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_48
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 126
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f76e8a32c1d6954999425af57df7df9
+      internalID: 1614528029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_49
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 128
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c63000722575142bd12e9b842fec34
+      internalID: -1692360068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_50
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 122
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3870082ad99fb724ea68c434d2c909be
+      internalID: -1762272767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_51
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 117
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef016e3af13b02f49ad212633577ecfa
+      internalID: -540182193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_52
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 111
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffd4d685f7e99f4ab068bfea1a9c61a
+      internalID: 1318683553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_53
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 107
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607f68aa3a2014d438f652560ab57546
+      internalID: 1298649634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_54
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 102
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d24fefba9f6cc9489599a704f80768a
+      internalID: -1458529528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_55
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 100
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdead7741e5dc3949a9e6ac6403af43c
+      internalID: 1768410119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_56
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 24
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2117778d3ff3b844f99523fbf4f436cb
+      internalID: -82793251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_57
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 24
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2db5692bceadc04a93d62594e5f8d52
+      internalID: 333828964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_58
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 24
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b31142ca9a59134d94c4842d4892e76
+      internalID: -196370909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_59
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 24
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e10d4c8ed9906a47b4ec25525b04dc1
+      internalID: 1301141386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_60
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 22
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7d7b179fc494541bd536c0840796ac
+      internalID: 1196772775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_61
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 17
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b37888a9cb1b5429884eaaeeb45315
+      internalID: 361156401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Dungeon Props Animation_62
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 14
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3cde552c175dd47a4a731c1388c5ca
+      internalID: -1047538885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +1468,70 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TX Dungeon Props Animation_0: -33826438
+      TX Dungeon Props Animation_1: -1751589723
+      TX Dungeon Props Animation_10: -1831556675
+      TX Dungeon Props Animation_11: 865096685
+      TX Dungeon Props Animation_12: -720939315
+      TX Dungeon Props Animation_13: -1588009200
+      TX Dungeon Props Animation_14: 1593123298
+      TX Dungeon Props Animation_15: -626627569
+      TX Dungeon Props Animation_16: -1156465114
+      TX Dungeon Props Animation_17: -1502195282
+      TX Dungeon Props Animation_18: 2147329455
+      TX Dungeon Props Animation_19: 994089527
+      TX Dungeon Props Animation_2: 1888447468
+      TX Dungeon Props Animation_20: 1598465994
+      TX Dungeon Props Animation_21: 1005888213
+      TX Dungeon Props Animation_22: -14999092
+      TX Dungeon Props Animation_23: -254311077
+      TX Dungeon Props Animation_24: 1871239964
+      TX Dungeon Props Animation_25: 731635279
+      TX Dungeon Props Animation_26: -987087736
+      TX Dungeon Props Animation_27: -1813900458
+      TX Dungeon Props Animation_28: 474638104
+      TX Dungeon Props Animation_29: 1567182235
+      TX Dungeon Props Animation_3: -1495191804
+      TX Dungeon Props Animation_30: -1896659913
+      TX Dungeon Props Animation_31: -1000051891
+      TX Dungeon Props Animation_32: -227521272
+      TX Dungeon Props Animation_33: 1135937979
+      TX Dungeon Props Animation_34: -1489025121
+      TX Dungeon Props Animation_35: 644579411
+      TX Dungeon Props Animation_36: 354150342
+      TX Dungeon Props Animation_37: -1685463046
+      TX Dungeon Props Animation_38: -1042396923
+      TX Dungeon Props Animation_39: -1820183499
+      TX Dungeon Props Animation_4: -1533287789
+      TX Dungeon Props Animation_40: 66520014
+      TX Dungeon Props Animation_41: -1696351560
+      TX Dungeon Props Animation_42: -879565475
+      TX Dungeon Props Animation_43: 2132416189
+      TX Dungeon Props Animation_44: 875922792
+      TX Dungeon Props Animation_45: -1664786641
+      TX Dungeon Props Animation_46: 481686989
+      TX Dungeon Props Animation_47: -413023204
+      TX Dungeon Props Animation_48: 1614528029
+      TX Dungeon Props Animation_49: -1692360068
+      TX Dungeon Props Animation_5: 2008262134
+      TX Dungeon Props Animation_50: -1762272767
+      TX Dungeon Props Animation_51: -540182193
+      TX Dungeon Props Animation_52: 1318683553
+      TX Dungeon Props Animation_53: 1298649634
+      TX Dungeon Props Animation_54: -1458529528
+      TX Dungeon Props Animation_55: 1768410119
+      TX Dungeon Props Animation_56: -82793251
+      TX Dungeon Props Animation_57: 333828964
+      TX Dungeon Props Animation_58: -196370909
+      TX Dungeon Props Animation_59: 1301141386
+      TX Dungeon Props Animation_6: 1382999037
+      TX Dungeon Props Animation_60: 1196772775
+      TX Dungeon Props Animation_61: 361156401
+      TX Dungeon Props Animation_62: -1047538885
+      TX Dungeon Props Animation_7: -1976345283
+      TX Dungeon Props Animation_8: 686340346
+      TX Dungeon Props Animation_9: 1252355483
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -20,8 +20,4 @@ public class AnimationManager : MonoBehaviour {
         player.isAttacking = false;
         Debug.Log("Bro Isnt Hit Anymore");
     }
-
-    public void BroDied() {
-        Time.timeScale = 0;
-    }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
@@ -42,15 +43,23 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private float manaCost;
 
+    [SerializeField]
+    private GameObject deathScreen;
+
     public bool isHit = false;
 
+    private GameObject fireBreath;
+
     // Start is called before the first frame update
+
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         
         animator = GetComponentInChildren<Animator>();
 
         animationManager = GetComponentInChildren<AnimationManager>();
+
+        fireBreath = transform.GetChild(2).gameObject;
 
         _health = health;
     }
@@ -105,6 +114,10 @@ public class Player : MonoBehaviour {
         if (collision.tag == "EnemyAttack") {
             TakeDamage(1);
         }
+
+        if (collision.tag == "Death") {
+            TakeDamage(1000);
+        }
     }
 
     private void FixedUpdate() {
@@ -133,16 +146,16 @@ public class Player : MonoBehaviour {
         animator.SetBool("Jump", !grounded);
     }
 
-    public void TakeDamage(int dmg) {
+    public void TakeDamage(float dmg) {
         if (!isHit) {
             Debug.Log("bro took " + dmg + " damage. :skull: Those who know:");
 
-            _health -= dmg;
+            GameManager.instance.gameData.Life -= dmg;
             rb.AddRelativeForce(Vector2.right);
             isHit = true;
             animator.SetTrigger("Hurt");
 
-            if (_health < 1) {
+            if (GameManager.instance.gameData.Life <= 0f) {
                 Death();
             }
         }
@@ -151,6 +164,15 @@ public class Player : MonoBehaviour {
     private void Death() {
         Debug.Log("Compiler Error.");
         animator.SetTrigger("Die");
+        StartCoroutine(DeathScreen());
+    }
+
+    IEnumerator DeathScreen() {
+        yield return new WaitForSeconds(0.6f);
+
+        deathScreen.SetActive(true);
+
+        Time.timeScale = 0f;
     }
 
     private void ShootFireball() {
@@ -158,7 +180,8 @@ public class Player : MonoBehaviour {
             GameManager.instance.gameData.Mana -= manaCost;
             GameObject fireballClone = Instantiate(fireball, spawnPointFireball.position, spawnPointFireball.rotation);
             fireballTimePass = 0;
-            fireballClone.GetComponent<Rigidbody2D>().velocity = spawnPointFireball.right * speed;
+            fireBreath.SetActive(true);
+            fireBreath.GetComponent<Animator>().SetTrigger("Fire");
         }
     }
 }

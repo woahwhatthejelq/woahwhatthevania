@@ -46,6 +46,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("gameData"+slot.ToString(), data);
     }
 
+    public void Reload() {
+        Application.Quit();
+    }
+
     public void LoadData(string slot)
     {
         if(PlayerPrefs.HasKey(slot) == true)
